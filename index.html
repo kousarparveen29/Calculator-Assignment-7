@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 7 (Calculator)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>CALCULATOR</h1>
+
+    <div class="main">
+        <div class="display">
+            <input type="text" class="result" id="result">
+        </div>
+        <div class="firstDiv">
+            <div class="rowDiv">
+                <button class="btn1" onclick="getSquareRoot()">√</button>
+                <button class="btn1" onclick="getFactorial()">n!</button>
+                <button class="btn1" onclick="getNumber('%')">%</button>
+                <button class="btn1" onclick="getPiValue()">π</button>
+            </div>
+            <div class="rowDiv">
+                <button class="btn1" onclick="getSquare()">x<sup>2</sup></button>
+                <button class="btn1" onclick="getCube()">x<sup>3</sup></button>
+                <button class="btn1" onclick="getNumber('(')">(</button>
+                <button class="btn1" onclick="getNumber(')')">)</button>
+            </div>
+        </div>
+        <div class="secondDiv">
+            <div class="rowDiv">
+                <button class="clear" onclick="clearScreen()">C</button>
+                <button class="btn2 del" onclick="getBackSpace()">⇦</button>
+                <button class="btn2" onclick="getNumber('/')">/</button>
+            </div>
+            <div class="rowDiv">
+                <button class="btn2" onclick="getNumber('7')">7</button>
+                <button class="btn2" onclick="getNumber('8')">8</button>
+                <button class="btn2" onclick="getNumber('9')">9</button>
+                <button class="btn2" onclick="getNumber('*')">*</button>
+            </div>
+            <div class="rowDiv">
+                <button class="btn2" onclick="getNumber('4')">4</button>
+                <button class="btn2" onclick="getNumber('5')">5</button>
+                <button class="btn2" onclick="getNumber('6')">6</button>
+                <button class="btn2" onclick="getNumber('-')">-</button>
+            </div>
+            <div class="rowDiv">
+                <button class="btn2" onclick="getNumber('1')">1</button>
+                <button class="btn2" onclick="getNumber('2')">2</button>
+                <button class="btn2" onclick="getNumber('3')">3</button>
+                <button class="btn2" onclick="getNumber('+')">+</button>
+            </div>
+            <div class="rowDiv">
+                <button class="btn2" onclick="getNumber('0')">0</button>
+                <button class="btn2" onclick="getNumber('.')">.</button>
+                <button class="equal" onclick="getResult()">=</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>
